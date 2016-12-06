@@ -18,6 +18,8 @@ public class CamelHelloWorldExample {
 					.to("stream:out");
 				}
 			});
+			
+			System.out.println("seid abdu ");
 			ProducerTemplate template = context.createProducerTemplate();
 			context.start();
 			template.sendBody("activemq:test.queue", "Hello World");
