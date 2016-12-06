@@ -13,7 +13,7 @@ public class CamelHelloWorldSpringExample {
 		try {
 			ProducerTemplate template = camelContext.createProducerTemplate();
 			camelContext.start();
-			template.sendBody("activemq:test.queue", "Hello World Camel");
+			template.sendBody("activemq:test.queue", "Hello World Camel seid");
 			Thread.sleep(2000);
 		} finally {
 			camelContext.stop();
